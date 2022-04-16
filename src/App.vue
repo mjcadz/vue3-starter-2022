@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import LayoutManager from '@/layouts/LayoutManager.vue'
+</script>
 
 <template>
-  <router-view />
+  <LayoutManager />
 </template>

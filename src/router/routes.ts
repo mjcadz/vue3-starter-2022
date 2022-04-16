@@ -6,7 +6,7 @@ export const appRoutes: Array<RouteRecordRaw> = [
     name: 'Landing',
     component: () => import('@/views/Landing.vue'),
     meta: {
-      layout: 'AppLayout',
+      layout: 'DefaultLayout',
     },
   },
 ]
