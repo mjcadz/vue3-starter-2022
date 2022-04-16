@@ -11,6 +11,6 @@ if [[ "$msg" =~ ^(:[a-z0-9_]+:[[:space:]])?[a-z]+\([a-z0-9_\-]+\):[[:space:]].+$
 
 else
 
-    echo "\n❌ Invalid commit message, follow ':emoji: type(scope): short description'\n" && exit 1
+    echo "\n❌ Invalid commit message, follow conventional commits 'type(scope): short description'\n" && exit 1
 
 fi
