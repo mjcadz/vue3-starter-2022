@@ -3,14 +3,14 @@
 
 msg=`cat "$1"`
 
-#match conventional emoji pattern ':emoji: type(scope) short description'
+#match conventional emoji pattern ':emoji: type(scope): short description'
 
-if [[ "$msg" =~ ^:[a-z0-9_]+:[[:space:]][a-z]+\([a-z0-9_\-]+\):[[:space:]].+$ ]]; then
+if [[ "$msg" =~ ^(:[a-z0-9_]+:[[:space:]])?[a-z]+\([a-z0-9_\-]+\):[[:space:]].+$ ]]; then
 
     echo "\n✅ Valid commit message\n"
 
 else
 
-    echo "\n❌ Invalid commit message, follow ':emoji: type(scope) short description'\n" && exit 1
+    echo "\n❌ Invalid commit message, follow ':emoji: type(scope): short description'\n" && exit 1
 
 fi
