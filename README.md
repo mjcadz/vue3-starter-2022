@@ -1,10 +1,25 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 2022 Development Starter
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This template will get you started developing with Vue 3 in a modern development environment. 
+
+## Features
+
+- [Vite](https://vitejs.dev/guide/)
+- [Vue 3](https://vuejs.org/guide/introduction.html)
+- [TypeScript with Composition API](https://vuejs.org/guide/typescript/composition-api.html)
+- [Tailwind CSS v3](https://tailwindcss.com/docs/configuration)
+- [Vue Router v4](https://github.com/vuejs/router)
+- Preconfigured ESLint + Prettier
+- Lint Staged Files on Commit
+- Enforce Conventional Commits
+- Route Based Layouts
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- [VS Code](https://code.visualstudio.com/)
+- [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## Type Support For `.vue` Imports in TS
 
