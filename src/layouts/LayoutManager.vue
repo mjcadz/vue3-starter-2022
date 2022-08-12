@@ -6,23 +6,21 @@
   const layout = shallowRef()
   const route = useRoute()
 
+  const layouts = import.meta.glob('./*Layout.vue')
+
   watch(
     () => route.meta.layout as string | undefined,
     (metaLayout) => {
-      if (metaLayout !== undefined) {
-        layout.value = defineAsyncComponent(
-          () => import(/* @vite-ignore */ `./${metaLayout}.vue`)
-        )
-      } else {
-        layout.value = DefaultLayout
+      if (metaLayout) {
+        layout.value = defineAsyncComponent(layouts[`./${metaLayout}.vue`])
+        return
       }
+      layout.value = DefaultLayout
     },
     { immediate: true }
   )
 </script>
 
 <template>
-  <component :is="layout">
-    <slot />
-  </component>
+  <component :is="layout" />
 </template>
